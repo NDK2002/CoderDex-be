@@ -18,6 +18,7 @@ const createPokemon = async () => {
       id: i + 1,
       name: pokemonData[i]["Name"],
       types,
+      url: `http://localhost:8000/images/${i + 1}.png`,
     };
     data.data.push(pokemon);
   }
